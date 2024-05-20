@@ -1,4 +1,4 @@
-# Atividade cinco notas e maior e menor
+# Atividade seis notas e pares e impares
 
 import os
 os.system("clear")
