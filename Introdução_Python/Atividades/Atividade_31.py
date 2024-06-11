@@ -3,27 +3,27 @@ from dataclasses import dataclass
 
 os.system("clear || cls")
 
-QUANTIDADE_LIVROS = 2
+QUANTIDADE_ALUNOS = 2
 
 @dataclass
-class Livro:
-    titulo: str
-    autor: str
-    paginas: int
-    preco: float
+class Aluno:
+    nome: str
+    idade: int
+    peso: float
+    altura: float
 
-livros = []
+alunos = []
 
-for i in range(QUANTIDADE_LIVROS):
-    titulo = input("Digite o título do livro: ")
-    autor = input("Digite o nome do autor do livro: ")
-    paginas = int(input("Digite a quantidade de paginas: "))
-    preco = float(input("Digite o preço em reais: "))
-    livro = Livro(titulo = titulo, autor = autor, paginas = paginas, preco = preco)
-    livros.append(livro)
+for i in range(QUANTIDADE_ALUNOS):
+    nome = input("Digite seu nome: ")
+    idade = int(input("Digite sua idade: "))
+    peso = float(input("Digite seu peso: "))
+    altura = float(input("Digite sua altura: "))
+    aluno = Aluno(nome = nome, idade = idade, peso = peso, altura = altura)
+    alunos.append(aluno)
 
-for dados_livros in livros:
-    print(f"Título: {dados_livros.titulo}")
-    print(f"Nome do autor: {dados_livros.autor}")
-    print(f"Número de paginas: {dados_livros.paginas}")
-    print(f"Preço: {dados_livros.preco} Reais")
+for dados_alunos in alunos:
+    print(f"Nome: {dados_alunos.nome}")
+    print(f"Idade: {dados_alunos.idade} Anos")
+    print(f"Peso: {dados_alunos.peso} Kgs")
+    print(f"Altura: {dados_alunos.altura} Metros")
